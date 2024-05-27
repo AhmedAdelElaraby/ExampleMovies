@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343454153671",
+    "project_id": "new-project-7fb05",
+    "storage_bucket": "new-project-7fb05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343454153671:android:cc13659f6ae478ad6537e2",
+        "android_client_info": {
+          "package_name": "com.workdev.marketsfood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx6gQ5kQJxq0uSPZ-SjShV0yR0WwZVsLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

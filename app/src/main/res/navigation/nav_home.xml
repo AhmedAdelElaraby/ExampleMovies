@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user"
+    app:startDestination="@id/homeMovies">
+
+
+    <fragment
+        android:id="@+id/homeMovies"
+        android:name="com.workdev.marketsfood.ui.HomeMovies.HomeMovies"
+        android:label="fragment_home_movies"
+        tools:layout="@layout/fragment_home_movies" >
+        <action
+            android:id="@+id/action_homeMovies_to_detilseMovies"
+            app:destination="@id/detilseMovies" />
+        <action
+            android:id="@+id/action_homeMovies_to_searchMovies"
+            app:destination="@id/searchMovies" />
+        <action
+            android:id="@+id/action_homeMovies_to_favorites"
+            app:destination="@id/favorites" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchMovies"
+        android:name="com.workdev.marketsfood.ui.SearchMovies.SearchMovies"
+        android:label="fragment_search_movies"
+        tools:layout="@layout/fragment_search_movies" >
+        <action
+            android:id="@+id/action_searchMovies_to_detilseMovies"
+            app:destination="@id/detilseMovies" />
+    </fragment>
+    <fragment
+        android:id="@+id/detilseMovies"
+        android:name="com.workdev.marketsfood.ui.DetilseMovies.DetilseMovies"
+        android:label="fragment_detilse_movies"
+        tools:layout="@layout/fragment_detilse_movies" />
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.workdev.marketsfood.ui.Favorites.View.Favorites"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favorites_to_detilseMovies"
+            app:destination="@id/detilseMovies" />
+    </fragment>
+</navigation>
